@@ -5,13 +5,13 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
-# board: [ "nice_nano_v2" ]
+# board: [ "nice_view" ]
 # shield: [ "corne_left", "corne_right" ]
 # include:
 #   - board: bdn9_rev2
-#   - board: nice_nano_v2
+#   - board: nice_view
 #     shield: reviung41
-#   - board: nice_nano_v2
+#   - board: nice_view
 #     shield: corne_left
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -19,31 +19,31 @@
 #
 # ---
 # include:
-#   - board: nice_nano_v2
+#   - board: nice_view
 #     shield: sofle_left
-#   - board: nice_nano_v2
+#   - board: nice_view
 #     shield: sofle_right
 # include:
-#   - board: nice_nano_v2
+#   - board: nice_view
 #     shield: sofle_left
-#   - board: nice_nano_v2
+#   - board: nice_view
 #     shield: sofle_right
-board: [ "nice_nano_v2" ]
+board: [ "nice_view" ]
 shield: [ "sofle_left", "sofle_right" ]
 include:
-  - board: nice_nano_v2
+  - board: nice_view
     shield: sofle_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: sofle_left_with_studio
-  - board: nice_nano_v2
+  - board: nice_view
     shield: sofle_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: sofle_right_with_studio
-  - board: nice_nano_v2
+  - board: nice_view
     shield: settings_reset
-  - board: nice_nano_v2 # Replace with the Pro Micro-compatible board you're using
+  - board: nice_view # Replace with the Pro Micro-compatible board you're using
     shield: tester_pro_micro
 
   
